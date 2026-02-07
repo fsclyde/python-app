@@ -6,6 +6,10 @@ on:
       - src/**
     branches:
       - main
+  workflow_dispatch:  # Enables gh workflow run
+
+permissions:
+  contents: write  # Required for add-and-commit
 
 jobs:
   ci:
